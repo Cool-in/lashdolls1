@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alma by Rocío Sanz - Estética y belleza integral en Elche. Servicios de manicura, tratamientos faciales, corporales y especializados en la mirada. Descubre el alma de tu belleza.">
+  <title class="notranslate" translate="no">Alma by Rocío Sanz | Estética y Belleza Integral en Elche</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=1.3">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo notranslate" translate="no">ALMA</a>
+      
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Inicio</a>
+        <a href="#about" class="nav-link">El Salón</a>
+        <a href="#services" class="nav-link">Tratamientos</a>
+        <a href="#gallery" class="nav-link">Galería</a>
+        <a href="#reviews" class="nav-link">Opiniones</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="#booking" class="btn btn-outline" style="padding: 10px 20px; font-size: 11px;">
+          <span>Reservar Cita</span>
+        </a>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="assets/salon_interior.png" alt="Interior de Alma por Rocío Sanz">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo notranslate" translate="no">
+        <img src="logo.svg" alt="Alma Logo">
+      </div>
+      <p class="hero-tagline">Estética, Bienestar y un toque de <span class="notranslate" translate="no">Alma</span></p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary"><span>Reservar Cita</span></a>
+        <a href="#services" class="btn btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.4)"><span>Ver Servicios</span></a>
+      </div>
+    </div>
+    
+    <div class="hero-scroll-indicator">
+      <span>Deslizar</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-container">
+          <img src="assets/team_rocio.png" alt="Rocío Sanz - Alma" class="about-img">
+          <div class="about-img-frame"></div>
+        </div>
+        
+        <div class="about-content">
+          <span class="section-tag">Bienvenida a <span class="notranslate" translate="no">Alma</span></span>
+          <h2 class="section-title">El alma de tu belleza comienza en ti</h2>
+          <p class="about-philosophy">"Creemos que la belleza comienza cuando te sientes bien contigo misma."</p>
+          <div class="about-description">
+            <p>
+              <span class="notranslate" translate="no">Alma</span> by Rocío Sanz es un centro de estética y belleza integral concebido como un refugio de cuidado personal. Dirigido por <strong>Rocío Sanz</strong>, nuestro espacio fusiona profesionalidad, pasión y un toque de alma para ofrecerte tratamientos únicos y personalizados.
+            </p>
+            <p>
+              Cuidamos cada detalle desde el instante en que cruzas nuestras puertas para asegurarte una experiencia profundamente relajante y satisfactoria. Nos especializamos en potenciar tu esencia natural mediante técnicas estéticas avanzadas y productos de la más alta calidad.
+            </p>
+          </div>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <h4>Estética Avanzada</h4>
+              <p>Tratamientos adaptados a las necesidades reales de tu piel.</p>
+            </div>
+            <div class="feature-item">
+              <h4>El Arte de la Mirada</h4>
+              <p>Extensiones, lifting y laminados para dar fuerza a tus ojos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <span class="section-tag">Nuestra Carta</span>
+      <h2 class="section-title">Tratamientos Especializados</h2>
+      <p class="section-subtitle">Seleccionamos cuidadosamente técnicas no invasivas de alta eficacia para realzar tu belleza y bienestar integral.</p>
+      
+      <!-- Services Filter Tabs -->
+      <div class="services-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="uñas">Manicura & Uñas</button>
+        <button class="filter-btn" data-filter="facial">Facial & Corporal</button>
+        <button class="filter-btn" data-filter="mirada">Mirada & Cejas</button>
+      </div>
+      
+      <!-- Services Grid -->
+      <div class="services-grid">
+        <!-- Nails 1 -->
+        <div class="service-card" data-category="uñas">
+          <div class="service-header">
+            <h3 class="service-title">Manicura Semipermanente</h3>
+            <span class="service-price">22€</span>
+          </div>
+          <p class="service-desc">Limpieza profunda de cutículas, limado, base reforzada para mayor durabilidad y esmaltado con tu tono favorito.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 35 min</span>
+            <span class="service-book-btn" data-service-name="manicura-semi">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+
+        <!-- Nails 2 -->
+        <div class="service-card" data-category="uñas">
+          <div class="service-header">
+            <h3 class="service-title">Uñas de Gel (Extensión)</h3>
+            <span class="service-price">45€</span>
+          </div>
+          <p class="service-desc">Alargamiento de uñas con molde mediante gel hipoalergénico. Incluye limado, diseño y esmaltado de larga duración.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 90 min</span>
+            <span class="service-book-btn" data-service-name="unas-gel">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+
+        <!-- Nails 3 -->
+        <div class="service-card" data-category="uñas">
+          <div class="service-header">
+            <h3 class="service-title">Pedicura Spa Completa</h3>
+            <span class="service-price">38€</span>
+          </div>
+          <p class="service-desc">Tratamiento relajante con exfoliación profunda, retirada de durezas, mascarilla hidratante, masaje podal y esmaltado.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 50 min</span>
+            <span class="service-book-btn" data-service-name="pedicura-spa">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+
+        <!-- Facial 1 -->
+        <div class="service-card" data-category="facial">
+          <div class="service-header">
+            <h3 class="service-title">Higiene Facial Profunda</h3>
+            <span class="service-price">40€</span>
+          </div>
+          <p class="service-desc">Limpieza profunda con ultrasonidos, extracción de impurezas, mascarilla personalizada y masaje descongestivo.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 60 min</span>
+            <span class="service-book-btn" data-service-name="higiene-facial">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+
+        <!-- Facial 2 -->
+        <div class="service-card" data-category="facial">
+          <div class="service-header">
+            <h3 class="service-title">Facial Luminosidad Oro</h3>
+            <span class="service-price">45€</span>
+          </div>
+          <p class="service-desc">Tratamiento revitalizante para pieles apagadas con vitamina C y activos hidratantes. Devuelve el brillo inmediato.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 45 min</span>
+            <span class="service-book-btn" data-service-name="facial-oro">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+
+        <!-- Facial 3 -->
+        <div class="service-card" data-category="facial">
+          <div class="service-header">
+            <h3 class="service-title">Tratamiento Corporal Reductor</h3>
+            <span class="service-price">55€</span>
+          </div>
+          <p class="service-desc">Masaje remodelante combinado con maderoterapia y principios activos concentrados para reducir volumen y reafirmar la piel.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 60 min</span>
+            <span class="service-book-btn" data-service-name="corporal-reductor">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+
+        <!-- Eye 1 -->
+        <div class="service-card" data-category="mirada">
+          <div class="service-header">
+            <h3 class="service-title">Lifting de Pestañas + Tinte</h3>
+            <span class="service-price">30€</span>
+          </div>
+          <p class="service-desc">Curvatura natural de tus propias pestañas desde la raíz con aplicación de tinte oscuro para un efecto rímel duradero.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 45 min</span>
+            <span class="service-book-btn" data-service-name="lifting-pestanas">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+
+        <!-- Eye 2 -->
+        <div class="service-card" data-category="mirada">
+          <div class="service-header">
+            <h3 class="service-title">Laminado de Cejas + Diseño</h3>
+            <span class="service-price">28€</span>
+          </div>
+          <p class="service-desc">Peinado semipermanente de cejas para ordenarlas y dar sensación de mayor volumen. Incluye depilación y diseño.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 35 min</span>
+            <span class="service-book-btn" data-service-name="laminado-cejas">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+
+        <!-- Eye 3 -->
+        <div class="service-card" data-category="mirada">
+          <div class="service-header">
+            <h3 class="service-title">Extensiones Pestañas (1 a 1)</h3>
+            <span class="service-price">60€</span>
+          </div>
+          <p class="service-desc">Colocación individual de pestañas de seda sobre tu pestaña natural para un resultado sutil, elegante y natural.</p>
+          <div class="service-footer">
+            <span class="service-duration"><i class="far fa-clock"></i> 90 min</span>
+            <span class="service-book-btn" data-service-name="extension-pelo">Reservar <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <div class="container">
+      <span class="section-tag">Espacio Inspirador</span>
+      <h2 class="section-title">Nuestra Esencia Visual</h2>
+      <p class="section-subtitle">Un recorrido fotográfico por los tratamientos más demandados y las acogedoras estancias del salón <span class="notranslate" translate="no">Alma</span> en Elche.</p>
+      
+      <div class="gallery-grid">
+        <!-- Item 1 (Wide interior) -->
+        <div class="gallery-item col-span-2 row-span-2">
+          <img src="assets/salon_interior.png" alt="Instalaciones de Alma">
+          <div class="gallery-info">
+            <p>El Salón</p>
+            <h4 class="notranslate" translate="no">Espacio Alma</h4>
+          </div>
+        </div>
+        <!-- Item 2 (Facial) -->
+        <div class="gallery-item">
+          <img src="assets/treatment_facial.png" alt="Tratamiento Facial">
+          <div class="gallery-info">
+            <p>Estética</p>
+            <h4>Tratamiento Facial</h4>
+          </div>
+        </div>
+        <!-- Item 3 (Nails) -->
+        <div class="gallery-item">
+          <img src="assets/treatment_nails.png" alt="Detalle Manicura">
+          <div class="gallery-info">
+            <p>Uñas</p>
+            <h4>Manicura Elegante</h4>
+          </div>
+        </div>
+        <!-- Item 4 (Lashes) -->
+        <div class="gallery-item col-span-2">
+          <img src="assets/treatment_lashes.png" alt="Tratamientos de Mirada">
+          <div class="gallery-info">
+            <p>Mirada</p>
+            <h4>Laminados & Pestañas</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close"><i class="fas fa-times"></i></span>
+      <img src="" alt="Ampliado" class="lightbox-img">
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="reviews-header">
+        <div>
+          <span class="section-tag" style="color: var(--accent-gold);">Testimonios</span>
+          <h2 class="section-title" style="margin-bottom: 0;">Lo que dicen de nosotros</h2>
+        </div>
+        
+        <div class="reviews-summary">
+          <div class="reviews-rating-big">5.0</div>
+          <div class="reviews-meta">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="reviews-count">69 reseñas en Google Maps</span>
+          </div>
+          <div class="reviews-nav">
+            <div class="review-nav-btn prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="review-nav-btn next"><i class="fas fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="reviews-carousel-container">
+        <div class="reviews-track">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"Excelente trato, muy profesional y simpática. Me ha encantado el resultado de las uñas y las pestañas. Sin duda mi nuevo lugar favorito."</p>
+            <div class="review-author-info">
+              <div class="review-avatar">MR</div>
+              <div>
+                <h4 class="review-author-name">María Rodríguez</h4>
+                <span class="review-date">Hace 1 mes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"El local es precioso, súper acogedor y muy limpio. Rocío es encantadora, te mima un montón y trabaja súper bien. Súper recomendado."</p>
+            <div class="review-author-info">
+              <div class="review-avatar">LT</div>
+              <div>
+                <h4 class="review-author-name">Laura Torres</h4>
+                <span class="review-date">Hace 2 semanas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"Tratamiento facial espectacular. Salí con la piel súper luminosa y relajada. Rocío te explica todo con mucho mimo. Volveré seguro."</p>
+            <div class="review-author-info">
+              <div class="review-avatar">AB</div>
+              <div>
+                <h4 class="review-author-name">Ana Belén G.</h4>
+                <span class="review-date">Hace 3 semanas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"El mejor sitio de Elche para hacerse las cejas y pestañas. El lifting me dura un montón y las extensiones quedan súper naturales."</p>
+            <div class="review-author-info">
+              <div class="review-avatar">CS</div>
+              <div>
+                <h4 class="review-author-name">Cristina Sanz</h4>
+                <span class="review-date">Hace 2 meses</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="review-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">"Rocío es una gran profesional, te asesora y te cuida con mucho cariño. El salón tiene un ambiente de desconexión increíble."</p>
+            <div class="review-author-info">
+              <div class="review-avatar">SM</div>
+              <div>
+                <h4 class="review-author-name">Sandra M.</h4>
+                <span class="review-date">Hace 1 semana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact, Hours & Booking Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Column 1: Info and Hours -->
+        <div class="contact-info">
+          <div>
+            <span class="section-tag">Ubicación</span>
+            <h2 class="section-title" style="font-size: clamp(28px, 4vw, 44px);">Visítanos</h2>
+            <div class="info-block" style="margin-top: 24px;">
+              <h3>Dirección</h3>
+              <p>Carrer Alcalde Juan Hernández Rizo, 6 Bajo</p>
+              <p>03203 Elx, Alicante</p>
+              <p style="margin-top: 10px; font-size: 13px; color: var(--accent-sage);"><i class="fas fa-bus"></i> A 2 minutos a pie de la parada de autobús BSAnton-P-Cen [Elx].</p>
+            </div>
+            
+            <div class="info-block" style="margin-top: 30px;">
+              <h3>Contacto</h3>
+              <p>Teléfono: <a href="tel:+34621146058" style="color: var(--accent-gold); font-weight: 500;">621 14 60 58</a></p>
+              <p>Instagram: <a href="https://www.instagram.com/alma_byrociosanz/" target="_blank" style="color: var(--accent-gold); font-weight: 500;">@alma_byrociosanz</a></p>
+            </div>
+          </div>
+          
+          <div class="info-block">
+            <h3>Horario de Apertura</h3>
+            <div class="hours-list">
+              <div class="hours-row" id="hours-mon">
+                <span class="hours-day">Lunes</span>
+                <span class="hours-time">Cerrado</span>
+              </div>
+              <div class="hours-row" id="hours-tue">
+                <span class="hours-day">Martes</span>
+                <span class="hours-time">09:30 – 19:30</span>
+              </div>
+              <div class="hours-row" id="hours-wed">
+                <span class="hours-day">Miércoles</span>
+                <span class="hours-time">09:30 – 19:30</span>
+              </div>
+              <div class="hours-row" id="hours-thu">
+                <span class="hours-day">Jueves</span>
+                <span class="hours-time">09:30 – 19:30</span>
+              </div>
+              <div class="hours-row" id="hours-fri">
+                <span class="hours-day">Viernes</span>
+                <span class="hours-time">09:30 – 19:30</span>
+              </div>
+              <div class="hours-row" id="hours-sat">
+                <span class="hours-day">Sábado</span>
+                <span class="hours-time">09:30 – 14:00</span>
+              </div>
+              <div class="hours-row" id="hours-sun">
+                <span class="hours-day">Domingo</span>
+                <span class="hours-time">Cerrado</span>
+              </div>
+            </div>
+            
+            <!-- Live schedules indicator badge -->
+            <div id="live-status-badge" class="live-status">
+              <span id="live-status-text">Cargando estado...</span>
+            </div>
+          </div>
+          
+          <!-- Map placeholder using responsive embed -->
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3135.8078909673995!2d-0.6868612!3d38.2596043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b438345c26b9%3A0xe2bc1d84860d5b40!2sCarrer%20Alcalde%20Juan%20Hern%C3%A1ndez%20Rizo%2C%206%2C%20Bajo%2C%2003203%20Elche%2C%20Alicante!5e0!3m2!1ses!2ses!4v1719000000000!5m2!1ses!2ses" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        
+        <!-- Column 2: Booking Wizard -->
+        <div id="booking" class="booking-panel">
+          <span class="section-tag">Reserva Online</span>
+          <h2 class="section-title" style="font-size: 32px; margin-bottom: 30px;">Tu Momento <span class="notranslate" translate="no">Alma</span></h2>
+          
+          <div class="wizard-booking-flow">
+            <!-- Progress Tracker -->
+            <div class="wizard-steps">
+              <div class="step-indicator active">
+                <div class="step-num">1</div>
+                <span class="step-label">Tratamiento</span>
+              </div>
+              <div class="step-indicator">
+                <div class="step-num">2</div>
+                <span class="step-label">Fecha</span>
+              </div>
+              <div class="step-indicator">
+                <div class="step-num">3</div>
+                <span class="step-label">Datos</span>
+              </div>
+              <div class="step-indicator">
+                <div class="step-num">4</div>
+                <span class="step-label">Resumen</span>
+              </div>
+            </div>
+            
+            <!-- Step 1: Select Service -->
+            <div class="wizard-form-step active" data-step="0">
+              <div class="form-group">
+                <label for="book-service" class="form-label">Selecciona el tratamiento</label>
+                <select id="book-service" class="form-input">
+                  <option value="" disabled selected>-- Elige un servicio --</option>
+                  <optgroup label="Manicura & Uñas">
+                    <option value="manicura-semi">Manicura Semipermanente — 22€</option>
+                    <option value="unas-gel">Uñas de Gel (Extensión) — 45€</option>
+                    <option value="pedicura-spa">Pedicura Spa Completa — 38€</option>
+                  </optgroup>
+                  <optgroup label="Facial & Corporal">
+                    <option value="higiene-facial">Higiene Facial Profunda — 40€</option>
+                    <option value="facial-oro">Facial Luminosidad Oro — 45€</option>
+                    <option value="corporal-reductor">Tratamiento Corporal Reductor — 55€</option>
+                  </optgroup>
+                  <optgroup label="Mirada & Cejas">
+                    <option value="lifting-pestanas">Lifting de Pestañas + Tinte — 30€</option>
+                    <option value="laminado-cejas">Laminado de Cejas + Diseño — 28€</option>
+                    <option value="extension-pelo">Extensiones de Pestañas (1 a 1) — 60€</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="wizard-nav">
+                <div></div>
+                <button class="btn btn-primary wizard-next"><span>Siguiente</span></button>
+              </div>
+            </div>
+            
+            <!-- Step 2: Date and Time -->
+            <div class="wizard-form-step" data-step="1">
+              <div class="form-group-grid">
+                <div class="form-group">
+                  <label for="book-date" class="form-label">Fecha deseada</label>
+                  <input type="date" id="book-date" class="form-input">
+                </div>
+                <div class="form-group">
+                  <label for="book-time" class="form-label">Hora</label>
+                  <select id="book-time" class="form-input">
+                    <option value="" disabled selected>-- Elegir hora --</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:30">13:30</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:30">18:30</option>
+                  </select>
+                </div>
+              </div>
+              <div class="wizard-nav">
+                <button class="btn btn-outline wizard-prev"><span>Atrás</span></button>
+                <button class="btn btn-primary wizard-next"><span>Siguiente</span></button>
+              </div>
+            </div>
+            
+            <!-- Step 3: Personal Details -->
+            <div class="wizard-form-step" data-step="2">
+              <div class="form-group">
+                <label for="book-name" class="form-label">Nombre y apellidos</label>
+                <input type="text" id="book-name" class="form-input" placeholder="Tu nombre completo">
+              </div>
+              <div class="form-group">
+                <label for="book-phone" class="form-label">Teléfono de contacto</label>
+                <input type="tel" id="book-phone" class="form-input" placeholder="Ej: 600 000 000">
+              </div>
+              <div class="form-group">
+                <label for="book-notes" class="form-label">Notas adicionales (opcional)</label>
+                <textarea id="book-notes" class="form-input" placeholder="Indícanos si tienes alguna alergia o comentario especial..."></textarea>
+              </div>
+              <div class="wizard-nav">
+                <button class="btn btn-outline wizard-prev"><span>Atrás</span></button>
+                <button class="btn btn-primary wizard-next"><span>Siguiente</span></button>
+              </div>
+            </div>
+            
+            <!-- Step 4: Summary -->
+            <div class="wizard-form-step" data-step="3">
+              <div class="booking-summary-box">
+                <div class="summary-row">
+                  <span class="summary-label">Tratamiento</span>
+                  <span class="summary-val" id="summary-service">-</span>
+                </div>
+                <div class="summary-row">
+                  <span class="summary-label">Fecha</span>
+                  <span class="summary-val" id="summary-date">-</span>
+                </div>
+                <div class="summary-row">
+                  <span class="summary-label">Hora</span>
+                  <span class="summary-val" id="summary-time">-</span>
+                </div>
+                <div class="summary-row">
+                  <span class="summary-label">Cliente</span>
+                  <span class="summary-val" id="summary-name">-</span>
+                </div>
+                <div class="summary-row">
+                  <span class="summary-label">Teléfono</span>
+                  <span class="summary-val" id="summary-phone">-</span>
+                </div>
+              </div>
+              <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 24px;">
+                * Tu reserva quedará pre-confirmada. Nos pondremos en contacto contigo vía WhatsApp o llamada para reconfirmar la disponibilidad final.
+              </p>
+              <div class="wizard-nav">
+                <button class="btn btn-outline wizard-prev"><span>Atrás</span></button>
+                <button class="btn btn-primary wizard-submit"><span>Confirmar Cita</span></button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Booking Success Message -->
+          <div class="booking-success" style="display: none;">
+            <div class="success-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <h3>¡Cita Solicitada!</h3>
+            <p>Hemos recibido tu solicitud para el tratamiento. Te enviaremos un mensaje de confirmación a la mayor brevedad posible.</p>
+            <button class="btn btn-primary" onclick="window.location.reload();"><span>Hacer otra reserva</span></button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Logo and brand details -->
+        <div class="footer-brand">
+          <div class="footer-logo notranslate" translate="no">
+            <img src="logo.svg" alt="Alma Logo">
+          </div>
+          <p style="margin-top: 10px;">Tu salón de confianza en Elche. Un espacio de calma dedicado en exclusiva al cuidado de tu piel y cuerpo.</p>
+        </div>
+        
+        <!-- Navigation Quick Links -->
+        <div>
+          <h4 class="footer-title">Enlaces Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Inicio</a></li>
+            <li><a href="#about" class="footer-link">El Salón</a></li>
+            <li><a href="#services" class="footer-link">Tratamientos</a></li>
+            <li><a href="#gallery" class="footer-link">Galería</a></li>
+            <li><a href="#reviews" class="footer-link">Opiniones</a></li>
+          </ul>
+        </div>
+        
+        <!-- Social and Legal -->
+        <div>
+          <h4 class="footer-title">Síguenos</h4>
+          <p>Visita nuestro Instagram para conocer los últimos diseños de uñas, promociones y el estilo del salón.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/alma_byrociosanz/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+34621146058" class="social-btn"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span class="notranslate" translate="no">Alma</span> by Rocío Sanz. Todos los derechos reservados.</p>
+        <p>Designed by <a href="https://upsearch.io" target="_blank" style="text-decoration: underline; color: inherit;">UpSearch.io</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
