@@ -62,6 +62,10 @@ body {
   overflow-x: hidden;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -156,7 +160,7 @@ body.hovering-interactive .custom-cursor-follower {
 
 @media (max-width: 768px) {
   .container {
-    padding: 0 24px;
+    padding: 0 20px;
   }
 }
 
@@ -167,7 +171,16 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: 80px 0;
+    padding: 64px 0;
+  }
+
+  button,
+  .btn,
+  .social-btn,
+  .review-nav-btn,
+  .tab-btn,
+  .filter-btn {
+    min-height: 44px;
   }
 }
 
@@ -522,8 +535,37 @@ header .burger-menu.open span {
 }
 
 @media (max-width: 1024px) {
+  header {
+    height: 70px;
+  }
+
   .burger-menu {
     display: flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .burger-menu span {
+    width: 24px;
+  }
+
+  .nav-logo img {
+    height: 42px !important;
+    max-width: 132px;
+    object-fit: contain;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .cart-nav-widget {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
   }
   
   .nav-menu {
@@ -533,6 +575,7 @@ header .burger-menu.open span {
     width: 80%;
     max-width: 400px;
     height: 100vh;
+    height: 100dvh;
     background-color: var(--bg-primary);
     flex-direction: column;
     justify-content: center;
@@ -551,9 +594,18 @@ header .burger-menu.open span {
   .nav-menu .nav-link {
     color: var(--text-primary) !important;
   }
+
+  header.transparent-header .nav-menu .nav-link {
+    color: var(--text-primary) !important;
+  }
   
   .nav-menu .nav-link:hover,
   .nav-menu .nav-link.active {
+    color: var(--accent-gold) !important;
+  }
+
+  header.transparent-header .nav-menu .nav-link:hover,
+  header.transparent-header .nav-menu .nav-link.active {
     color: var(--accent-gold) !important;
   }
   
@@ -567,6 +619,12 @@ header .burger-menu.open span {
   
   .burger-menu.open span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 600px) {
+  header .nav-actions > .btn-outline {
+    display: none;
   }
 }
 
@@ -665,6 +723,25 @@ header .burger-menu.open span {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    height: 100svh;
+    min-height: 620px;
+  }
+
+  .hero-content {
+    padding: 40px 20px 0;
+  }
+
+  .hero-logo {
+    margin-bottom: 18px;
+  }
+
+  .hero-tagline {
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: center;
@@ -1199,6 +1276,16 @@ header .burger-menu.open span {
 @media (max-width: 600px) {
   .review-card {
     min-width: 100%;
+    padding: 28px 24px;
+  }
+
+  .reviews-summary {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .reviews-nav {
+    margin-left: auto;
   }
 }
 
@@ -1367,6 +1454,11 @@ header .burger-menu.open span {
 @media (max-width: 480px) {
   .booking-panel {
     padding: 30px 20px;
+  }
+
+  .step-label {
+    font-size: 9px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -1781,6 +1873,12 @@ footer {
     max-width: 100%;
     right: -100%;
   }
+
+  .cart-drawer-header,
+  .cart-drawer-body,
+  .cart-drawer-footer {
+    padding: 22px 20px;
+  }
 }
 
 .cart-drawer.open {
@@ -2063,6 +2161,29 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  .services-grid,
+  .shop-grid,
+  .academy-grid,
+  .pairs-well-grid,
+  .location-grid,
+  .technician-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .product-meta-row {
+    gap: 12px;
+  }
+
+  .product-card-actions {
+    flex-direction: column;
+  }
+
+  .product-card-actions .btn {
+    width: 100%;
+  }
+}
+
 .course-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -2273,6 +2394,31 @@ footer {
   .syllabus-list {
     grid-template-columns: 1fr;
   }
+
+  .course-modal-overlay {
+    padding: 10px;
+  }
+
+  .course-modal {
+    max-height: calc(100dvh - 20px);
+    border-radius: 16px;
+  }
+
+  .course-modal-header,
+  .course-modal-body {
+    padding: 22px 20px;
+  }
+
+  .course-modal-header h3 {
+    font-size: 23px;
+  }
+
+  .course-modal-footer {
+    padding: 18px 20px;
+    gap: 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .syllabus-item {
@@ -2357,7 +2503,7 @@ footer {
 
 @media (max-width: 768px) {
   .subpage-header {
-    padding: 50px 0 30px 0;
+    padding: 36px 0 28px 0 !important;
   }
 }
 
@@ -2559,6 +2705,20 @@ footer {
 @media (max-width: 480px) {
   .detail-actions-row {
     flex-direction: column;
+  }
+
+  .detail-container {
+    padding-bottom: 64px;
+  }
+
+  .detail-actions-row .btn,
+  .detail-qty-select {
+    width: 100%;
+  }
+
+  .breadcrumbs {
+    line-height: 1.7;
+    overflow-wrap: anywhere;
   }
 }
 
@@ -2995,6 +3155,16 @@ footer {
 @media (max-width: 576px) {
   .booking-widget {
     padding: 25px 15px;
+  }
+
+  .booking-step {
+    padding-left: 22px;
+  }
+
+  .location-card,
+  .tech-card {
+    min-width: 0;
+    padding: 16px;
   }
 }
 
@@ -3434,6 +3604,74 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .calendar-wrapper {
+    padding: 14px 10px;
+  }
+
+  .calendar-days {
+    gap: 2px;
+  }
+
+  .calendar-day {
+    font-size: 13px;
+  }
+
+  .time-slots-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .menu-item-dots {
+    display: none;
+  }
+
+  .menu-item-title {
+    flex: 1 1 180px;
+  }
+
+  .our-story-panel {
+    padding: 24px 20px !important;
+  }
+
+  .our-story-panel .story-content > div:first-child img {
+    height: auto !important;
+    max-height: 360px;
+  }
+
+  .our-story-panel .story-content img[alt="LashDolls"] {
+    width: 90px !important;
+    height: auto !important;
+    flex: 0 0 90px;
+  }
+}
+
+@media (hover: none) {
+  .course-card:hover,
+  .product-card:hover,
+  .service-card:hover,
+  .treatment-item-row:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* --- Wizard Step Progressive Locking --- */
 .booking-step {
   transition: opacity 0.4s ease, filter 0.4s ease;
@@ -3542,4 +3780,29 @@ footer {
   border-color: var(--accent-gold-dark);
   color: #ffffff !important;
   transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .location-grid,
+  .technician-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .related-products-section .shop-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .qty-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .cart-item-remove,
+  .cart-drawer-close {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

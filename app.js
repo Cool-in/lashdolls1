@@ -122,16 +122,41 @@ function initMobileMenu() {
 
   if (!burgerMenu || !navMenu) return;
 
+  burgerMenu.setAttribute('role', 'button');
+  burgerMenu.setAttribute('tabindex', '0');
+  burgerMenu.setAttribute('aria-label', 'Open navigation menu');
+  burgerMenu.setAttribute('aria-expanded', 'false');
+
+  function setMenuOpen(isOpen) {
+    burgerMenu.classList.toggle('open', isOpen);
+    navMenu.classList.toggle('open', isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
+    burgerMenu.setAttribute('aria-expanded', String(isOpen));
+    burgerMenu.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+  }
+
   burgerMenu.addEventListener('click', () => {
-    burgerMenu.classList.toggle('open');
-    navMenu.classList.toggle('open');
+    setMenuOpen(!navMenu.classList.contains('open'));
+  });
+
+  burgerMenu.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      setMenuOpen(!navMenu.classList.contains('open'));
+    }
   });
 
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
-      burgerMenu.classList.remove('open');
-      navMenu.classList.remove('open');
+      setMenuOpen(false);
     });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navMenu.classList.contains('open')) {
+      setMenuOpen(false);
+      burgerMenu.focus();
+    }
   });
 }
 
@@ -1434,4 +1459,3 @@ function initCourseCalendar() {
 
   draw();
 }
-
