@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an appointment or enrol in a beauty course at LashDolls Dublin in Ratoath, Co. Meath. Contact details and opening hours.">
+  <title class="notranslate" translate="no">Contact &amp; Booking | LashDolls Dublin</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=3.7">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="subpage-body">
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html?v=3.7" class="nav-logo notranslate" translate="no">
+        <img src="logo.png" alt="LashDolls Logo" style="height: 50px; width: auto;">
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="index.html?v=3.7" class="nav-link">Home</a>
+        <a href="about.html?v=3.7" class="nav-link">The Salon</a>
+        <a href="shop.html?v=3.7" class="nav-link">Shop</a>
+        <a href="courses.html?v=3.7" class="nav-link">Academy</a>
+        <a href="contact.html?v=3.7" class="nav-link active">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <!-- Floating Shopping Cart Widget -->
+        <div class="cart-nav-widget" id="cart-nav-trigger">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-counter-badge" id="cart-nav-count">0</span>
+        </div>
+
+        <a href="contact.html?v=3.7" class="btn btn-outline" style="padding: 10px 20px; font-size: 11px;">
+          <span>Book Appointment</span>
+        </a>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subpage Header -->
+  <section class="subpage-header">
+    <div class="container">
+      <span class="section-tag">Reservations</span>
+      <h1>Contact</h1>
+      <p>Get in touch with our team, read our founder's story, or visit our physical salon store in Ratoath.</p>
+    </div>
+  </section>
+
+  <!-- Booking & Details Grid -->
+  <section style="padding: 60px 0 100px 0;">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Column 1: Info and Hours -->
+        <div class="contact-info">
+          <div>
+            <span class="section-tag">Find Us</span>
+            <h2 class="section-title" style="font-size: clamp(28px, 4vw, 44px);">Visit the Salon</h2>
+            <div class="info-block" style="margin-top: 24px;">
+              <h3>Address</h3>
+              <p>The Village Centre, Suite 2</p>
+              <p>Ratoath, Co. Meath, Ireland</p>
+            </div>
+            
+            <div class="info-block" style="margin-top: 30px;">
+              <h3>Contact Details</h3>
+              <p>Phone: <a href="tel:+353852545061" style="color: var(--accent-gold); font-weight: 500;">+353 85 254 5061</a></p>
+              <p>Email: <a href="mailto:lashdolls99@gmail.com" style="color: var(--accent-gold); font-weight: 500;">lashdolls99@gmail.com</a></p>
+              <p>Instagram: <a href="https://www.instagram.com/lash_dolls_dublin/" target="_blank" style="color: var(--accent-gold); font-weight: 500;">@lash_dolls_dublin</a></p>
+            </div>
+          </div>
+          
+          <div class="info-block">
+            <h3>Opening Hours</h3>
+            <div class="hours-list">
+              <div class="hours-row" id="hours-mon">
+                <span class="hours-day">Monday</span>
+                <span class="hours-time">Closed</span>
+              </div>
+              <div class="hours-row" id="hours-tue">
+                <span class="hours-day">Tuesday</span>
+                <span class="hours-time">09:30 – 19:30</span>
+              </div>
+              <div class="hours-row" id="hours-wed">
+                <span class="hours-day">Wednesday</span>
+                <span class="hours-time">09:30 – 19:30</span>
+              </div>
+              <div class="hours-row" id="hours-thu">
+                <span class="hours-day">Thursday</span>
+                <span class="hours-time">09:30 – 19:30</span>
+              </div>
+              <div class="hours-row" id="hours-fri">
+                <span class="hours-day">Friday</span>
+                <span class="hours-time">09:30 – 19:30</span>
+              </div>
+              <div class="hours-row" id="hours-sat">
+                <span class="hours-day">Saturday</span>
+                <span class="hours-time">09:30 – 14:00</span>
+              </div>
+              <div class="hours-row" id="hours-sun">
+                <span class="hours-day">Sunday</span>
+                <span class="hours-time">Closed</span>
+              </div>
+            </div>
+            
+            <!-- Live status badge -->
+            <div id="live-status-badge" class="live-status">
+              <span id="live-status-text">Checking salon hours...</span>
+            </div>
+          </div>
+          
+          <!-- Map Responsive Embed -->
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9482.493922618995!2d-6.4678972!3d53.5085375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867160cbbe0ff9b%3A0xe21287c8cb7f4633!2sRatoath%2C%20Co.%20Meath!5e0!3m2!1sen!2sie!4v1719000000000!5m2!1sen!2sie" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        
+        <!-- Column 2: Our Story (Relocated from site) -->
+        <div class="our-story-panel" style="background: #ffffff; border: 1px solid var(--border-color); padding: 40px; border-radius: 12px; height: fit-content; box-shadow: 0 10px 30px rgba(0,0,0,0.02);">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title" style="font-size: 32px; margin-bottom: 30px;">Our Story</h2>
+          
+          <div class="story-content" style="font-size: 14.5px; line-height: 1.65; color: var(--text-secondary);">
+            <div style="margin-bottom: 25px; overflow: hidden; border-radius: 8px;">
+              <img src="assets/our_story_founder.png" alt="Karen Grehan - Founder of LashDolls" style="width: 100%; height: 420px; object-fit: cover; object-position: 50% 25%; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06);">
+            </div>
+            
+            <p style="margin-bottom: 15px;"><strong>LashDolls Dublin</strong> was founded in 2016 by <strong>Karen Grehan</strong>, a passionate beauty industry educator, entrepreneur, and mentor with over a decade of hands-on experience.</p>
+            
+            <p style="margin-bottom: 15px;">What began as a dedicated local salon in Ratoath, Co. Meath, has evolved into one of Ireland's most respected beauty brands and training academies. Over the years, LashDolls has trained and mentored hundreds of beauty professionals, helping them gain the technical skills and business acumen to launch their own successful careers.</p>
+
+            <blockquote style="font-style: italic; font-family: var(--font-serif); font-size: 16px; border-left: 3px solid var(--accent-gold-dark); padding-left: 15px; margin: 25px 0; color: var(--text-primary); line-height: 1.5;">
+              "My mission has always been simple: to empower aspiring beauty artists with the skills, confidence, and ongoing mentorship to build their own thriving independent businesses."
+            </blockquote>
+            
+            <p style="margin-bottom: 15px;">When salon closures hit during the pandemic, Karen pivoted the business model to focus on supply and digital learning. Today, LashDolls is proud to be a major Irish distributor of professional-grade lash and brow products, running a physical salon alongside its high-growth training academy.</p>
+            
+            <p style="margin-bottom: 25px;">Our core philosophy remains the same: empowering students with the skills, confidence, and ongoing mentorship needed to turn their passion into a thriving independent business.</p>
+            
+            <div style="border-top: 1px solid var(--border-color); padding-top: 20px; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <strong style="color: var(--text-primary); font-family: var(--font-serif); font-size: 16px; font-weight: 600;">Karen Grehan</strong><br>
+                <span style="font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500;">Founder & Lead Educator</span>
+              </div>
+              <img src="logo.png" alt="LashDolls" style="height: 35px; width: auto; opacity: 0.8;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo notranslate" translate="no">
+            <img src="logo.png" alt="LashDolls Logo" style="height: 44px; width: auto;">
+          </div>
+          <p style="margin-top: 10px;">Premium lashes, brows, and industry-certified educational courses. Located in Ratoath, Co. Meath.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html?v=3.7" class="footer-link">Home</a></li>
+            <li><a href="about.html?v=3.7" class="footer-link">The Salon</a></li>
+            <li><a href="shop.html?v=3.7" class="footer-link">Shop</a></li>
+            <li><a href="courses.html?v=3.7" class="footer-link">Academy</a></li>
+            <li><a href="contact.html?v=3.7" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Follow Us</h4>
+          <p>Follow our Instagram to see our clients' results, training session videos, and flash sales.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/lash_dolls_dublin/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+353852545061" class="social-btn"><i class="fas fa-phone"></i></a>
+            <a href="mailto:lashdolls99@gmail.com" class="social-btn"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span class="notranslate" translate="no">LashDolls</span>. All rights reserved.</p>
+        <p>Upgraded with luxury aesthetics by Antigravity</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Slide Drawer -->
+  <div class="cart-drawer-overlay" id="cart-overlay">
+    <div class="cart-drawer" id="cart-drawer">
+      <div class="cart-drawer-header">
+        <h3>Shopping Bag</h3>
+        <span class="cart-drawer-close" id="cart-close"><i class="fas fa-times"></i></span>
+      </div>
+      <div class="cart-drawer-body" id="cart-items-container">
+        <div class="cart-empty-message">
+          <i class="fas fa-shopping-bag"></i>
+          <p>Your bag is currently empty.</p>
+        </div>
+      </div>
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span class="cart-subtotal-price" id="cart-subtotal-val">€0.00</span>
+        </div>
+        <button class="btn btn-primary" id="checkout-btn" style="width: 100%; padding: 16px;">
+          <span>Secure Checkout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client JavaScript -->
+  <script src="app.js?v=3.7"></script>
+</body>
+</html>
