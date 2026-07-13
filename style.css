@@ -653,7 +653,7 @@ header .burger-menu.open span {
   font-weight: 300;
   letter-spacing: 0.05em;
   line-height: 1.3;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-style: italic;
 }
 
@@ -661,6 +661,7 @@ header .burger-menu.open span {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 480px) {
@@ -673,6 +674,7 @@ header .burger-menu.open span {
     width: 100%;
     max-width: 260px;
   }
+
 }
 
 /* Scroll indicator */
@@ -718,6 +720,12 @@ header .burger-menu.open span {
   0% { transform: translate(-50%, 0); opacity: 0; }
   30% { opacity: 1; }
   100% { transform: translate(-50%, 12px); opacity: 0; }
+}
+
+@media (max-width: 480px) {
+  .hero-scroll-indicator {
+    display: none;
+  }
 }
 
 /* --- About Section --- */
@@ -2022,9 +2030,10 @@ footer {
 }
 
 .product-card-price {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--accent-gold-hover);
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-primary);
 }
 
 .product-desc {
