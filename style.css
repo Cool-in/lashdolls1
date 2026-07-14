@@ -624,9 +624,9 @@ header .burger-menu.open span {
 
 @media (max-width: 600px) {
   .nav-menu {
-    width: 70%;
-    max-width: 320px;
-    padding: 60px 30px;
+    width: 180px;
+    max-width: calc(100% - 80px);
+    padding: 60px 20px;
   }
 
   header .nav-actions > .btn-outline {
