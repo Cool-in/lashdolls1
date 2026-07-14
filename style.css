@@ -623,6 +623,24 @@ header .burger-menu.open span {
 }
 
 @media (max-width: 600px) {
+  .nav-menu {
+    width: 70%;
+    max-width: 320px;
+    padding: 60px 30px;
+  }
+
+  header .nav-actions > .btn-outline {
+    display: inline-flex;
+    width: 116px;
+    min-height: 44px;
+    padding: 8px 10px !important;
+    font-size: 9px !important;
+    line-height: 1.35;
+    letter-spacing: 0.14em;
+  }
+}
+
+@media (max-width: 360px) {
   header .nav-actions > .btn-outline {
     display: none;
   }
@@ -3651,6 +3669,40 @@ footer {
 }
 
 @media (hover: none) {
+  .btn-primary::before,
+  .btn-outline::before {
+    display: none;
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active {
+    color: var(--text-light);
+    background-color: var(--bg-dark);
+    border-color: var(--bg-dark);
+  }
+
+  .btn-outline:hover,
+  .btn-outline:focus,
+  .btn-outline:active {
+    color: var(--text-primary);
+    background-color: transparent;
+    border-color: var(--text-primary);
+  }
+
+  .add-to-cart-btn,
+  .add-to-cart-btn:hover,
+  .add-to-cart-btn:focus,
+  .add-to-cart-btn:active {
+    color: var(--text-light) !important;
+    background-color: var(--bg-dark) !important;
+    border-color: var(--bg-dark) !important;
+  }
+
+  .add-to-cart-btn span {
+    color: inherit !important;
+  }
+
   .course-card:hover,
   .product-card:hover,
   .service-card:hover,
